@@ -9,6 +9,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  border: 1px solid red;
 }
 
 .name {
@@ -17,9 +18,11 @@ body {
 }
 
 .logo-letter {
-  width: 100px;
-  height: auto;
-  margin-left: 10px;
+  width: 130px;
+  height: 130px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  border: 1px solid blue;
 }
 
 img {
@@ -28,5 +31,9 @@ img {
 }
 
 #last-name {
-  
+  margin-left: 180px;
+}
+
+#letter-m {
+  width: 170px;
 }
