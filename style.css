@@ -7,22 +7,22 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
+  display: block;
+  position: relative;
+  padding: 0 20px;
 }
 
-.name {
-  display: flex;
-  flex-direction: row;
+.logo-body {
+  width: 1000px;
+  position: relative;
+  height: auto;
+  margin: 0 auto;
 }
 
 .logo-letter {
-  width: 130px;
-  height: 130px;
-  margin-left: 8px;
-  margin-bottom: 8px;
-  border: 1px solid blue;
+  width: 152px;
+  height: auto;
+  position: absolute;
 }
 
 img {
@@ -30,11 +30,12 @@ img {
   height: 100%;
 }
 
-#last-name {
-  position: relative;
-  left: 223px;
+#dial-1 {
+  top: 0px;
+  left: 128px;
 }
 
-#letter-m {
-  width: 170px;
+#dial-2 {
+  top: 158px;
+  left: 458px;
 }
