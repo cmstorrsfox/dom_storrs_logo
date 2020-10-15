@@ -31,7 +31,8 @@ img {
 }
 
 #last-name {
-  margin-left: 180px;
+  position: relative;
+  left: 223px;
 }
 
 #letter-m {
