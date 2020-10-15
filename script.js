@@ -5,8 +5,10 @@ const coordDisplay = document.getElementById('display-coords');
 
 //function to log position
 function logPos(event) {
-  const x = event.clientX;
-  const y = event.clientY;
+  const rect = event.currentTarget.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
+  console.log(rect)
   coordDisplay.innerHTML = `X = ${x}, Y = ${y}`
 }
 
@@ -14,8 +16,9 @@ logoContainer.addEventListener('click', logPos);
 
 //dial 1 functions and event listeners
 function rotateDialOneRight(event) {
-  const x = event.clientX;
-  const y = event.clientY;
+  const rect = event.currentTarget.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
 
   if(x > 360 && x < 490 && y < 220)  {
 
@@ -26,8 +29,9 @@ function rotateDialOneRight(event) {
 }
 
 function rotateDialOneLeft(event) {
-  const x = event.clientX;
-  const y = event.clientY;
+  const rect = event.currentTarget.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
 
   if(x > 174 && x < 320 && y < 220)  {
     dialOne.style.transition = "all 0.7s ease";
@@ -50,8 +54,9 @@ logoContainer.addEventListener('mouseleave', returnDialOne);
 
 //dial 2 functions and event listeners
 function rotateDialTwoRight(event) {
-  const x = event.clientX;
-  const y = event.clientY;
+  const rect = event.currentTarget.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
 
   if(x > 688 && x < 815 && y > 120 && y < 320)  {
 
@@ -62,8 +67,9 @@ function rotateDialTwoRight(event) {
 }
 
 function rotateDialTwoLeft(event) {
-  const x = event.clientX;
-  const y = event.clientY;
+  const rect = event.currentTarget.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
 
   if(x > 450 && x < 655 && y > 120 && y < 320)  {
     dialTwo.style.transition = "all 0.7s ease";
