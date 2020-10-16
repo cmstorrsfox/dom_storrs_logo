@@ -55,22 +55,30 @@ img {
 #one-4-r {
   left: 13rem;
   top: 0;
+  background-color: red;
+  opacity: 0.2;
 
 }
 
 #one-4-l {
   left: 4.5rem;
   top: 0;
+  background-color: red;
+  opacity: 0.2;
 }
 
 #one-2-r {
   left: 13rem;
   top: 10rem;
+  background-color: yellow;
+  opacity: 0.2;
 }
 
 #one-2-l {
   left: 4.5rem;
   top: 10rem;
+  background-color: yellow;
+  opacity: 0.2;
 }
 
 #two-4-l {
@@ -78,7 +86,7 @@ img {
   top: 7rem;
   height: 20rem;
   z-index: 4;
-  background-color: blue;
+  background-color: red;
   opacity: 0.2;
 }
 
@@ -103,4 +111,6 @@ img {
   left: 25rem;
   top: 0rem;
   height: 34rem;
+  background-color: yellow;
+  opacity: 0.2;
 }
