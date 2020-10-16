@@ -60,11 +60,17 @@ function returnDialOne() {
 }
 
 //event listeners for dial 1
+//start animation
 turnZoneOneTwoRight.addEventListener('mouseenter', rotateDialOneRightTwoClicks);
 turnZoneOneTwoLeft.addEventListener('mouseenter', rotateDialOneLeftTwoClicks);
 turnZoneOneFourRight.addEventListener('mouseenter', rotateDialOneRightFourClicks);
 turnZoneOneFourLeft.addEventListener('mouseenter', rotateDialOneLeftFourClicks);
-logoContainer.addEventListener('mouseleave', returnDialOne);
+
+//stop animation
+turnZoneOneTwoRight.addEventListener('mouseleave', returnDialOne);
+turnZoneOneTwoLeft.addEventListener('mouseleave', returnDialOne);
+turnZoneOneFourRight.addEventListener('mouseleave', returnDialOne);
+turnZoneOneFourLeft.addEventListener('mouseleave', returnDialOne);
 
 //dial 2 functions and event listeners
 //dial 2 two-clicks right
@@ -113,10 +119,15 @@ function returnDialTwo() {
   trackTwo.pause();
 }
 
-
+//start animation
 turnZoneTwoTwoRight.addEventListener('mouseenter', rotateDialTwoRightTwoClicks);
 turnZoneTwoTwoLeft.addEventListener('mouseenter', rotateDialTwoLeftTwoClicks);
 turnZoneTwoFourRight.addEventListener('mouseenter', rotateDialTwoRightFourClicks);
 turnZoneTwoFourLeft.addEventListener('mouseenter', rotateDialTwoLeftFourClicks);
-logoContainer.addEventListener('mouseleave', returnDialTwo);
+
+//stop animation
+turnZoneTwoTwoRight.addEventListener('mouseleave', returnDialTwo);
+turnZoneTwoTwoLeft.addEventListener('mouseleave', returnDialTwo);
+turnZoneTwoFourRight.addEventListener('mouseleave', returnDialTwo);
+turnZoneTwoFourLeft.addEventListener('mouseleave', returnDialTwo);
 
