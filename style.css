@@ -15,14 +15,14 @@ body {
 }
 
 .logo-body {
-  width: 62.5rem;
+  width: calc(62.5rem / 3);
   position: relative;
   height: auto;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .logo-letter {
-  width: 9.5rem;
+  width: calc(9.5rem / 3);
   height: auto;
   position: absolute;
 }
@@ -34,80 +34,80 @@ img {
 
 #dial-1 {
   top: 0px;
-  left: 8rem;
+  left: calc(8rem / 3);
 }
 
 #dial-2 {
-  top: 9.875rem;
-  left: 28.625rem;
+  top: calc(9.875rem / 3);
+  left: calc(28.625rem / 3);
 }
 
 .turn-zone {
-  width: 8rem;
-  height: 10rem;
+  width: calc(8rem / 3);
+  height: calc(10rem / 3);
   position: absolute;
   z-index: 2;
 }
 
 #one-4-r {
-  left: 13rem;
+  left: calc(13rem / 3);
   top: 0;
-  /*background-color: red;*/
-  opacity: 0.2;
+  /*background-color: red;
+  opacity: 0.2;*/
 
 }
 
 #one-4-l {
-  left: 4.5rem;
+  left: calc(4.5rem / 3);
   top: 0;
-  /*background-color: red;*/
-  opacity: 0.2;
+  /*background-color: red;
+  opacity: 0.2;*/
 }
 
 #one-2-r {
-  left: 13rem;
-  top: 10rem;
-  /*background-color: yellow;*/
-  opacity: 0.2;
+  left: calc(13rem / 3);
+  top: calc(10rem / 3);
+  /*background-color: yellow;
+  opacity: 0.2;*/
 }
 
 #one-2-l {
-  left: 4.5rem;
-  top: 10rem;
-  /*background-color: yellow;*/
-  opacity: 0.2;
+  left: calc(4.5rem / 3);
+  top: calc(10rem / 3);
+  /*background-color: yellow;
+  opacity: 0.2;*/
 }
 
 #two-4-l {
-  left: 25rem;
-  top: 7rem;
-  height: 20rem;
+  left: calc(25rem / 3);
+  top: calc(7rem / 3);
+  height: calc(20rem / 3);
   z-index: 4;
-  /*background-color: red;*/
-  opacity: 0.2;
+  /*background-color: red;
+  opacity: 0.2;*/
 }
 
 #two-4-r {
-  left: 33.5rem;
-  top: 7rem;
-  height: 20rem;
+  left: calc(33.5rem / 3);
+  top: calc(7rem / 3);
+  height: calc(20rem / 3);
   z-index: 4;
-  /*background-color: red;*/
-  opacity: 0.2;
+  /*background-color: red;
+  opacity: 0.2;*/
 }
 
 #two-2-r {
-  left: 33.5rem;
+  left: calc(33.5rem / 3);
   top: 0rem;
-  height: 34rem;
-  /*background-color: yellow;*/
-  opacity: 0.2;
+  height: calc(34rem / 3);
+  /*background-color: yellow;
+  opacity: 0.2;*/
 }
 
 #two-2-l {
-  left: 25rem;
+  left: calc(25rem / 3);
   top: 0rem;
-  height: 34rem;
-  /*background-color: yellow;*/
-  opacity: 0.2;
+  height: calc(34rem / 3);
+  /*background-color: yellow;
+  opacity: 0.2;*/
 }
