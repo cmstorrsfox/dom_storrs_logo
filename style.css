@@ -12,7 +12,6 @@ body {
   display: block;
   position: relative;
   padding: 0 1.25rem;
-  border: 1px solid red;
 }
 
 .logo-body {
@@ -46,7 +45,6 @@ img {
 .turn-zone {
   width: 8rem;
   height: 10rem;
-  border: 1px solid purple;
   position: absolute;
   z-index: 2;
 }
@@ -54,7 +52,7 @@ img {
 #one-4-r {
   left: 13rem;
   top: 0;
-  background-color: red;
+  /*background-color: red;*/
   opacity: 0.2;
 
 }
@@ -62,21 +60,21 @@ img {
 #one-4-l {
   left: 4.5rem;
   top: 0;
-  background-color: red;
+  /*background-color: red;*/
   opacity: 0.2;
 }
 
 #one-2-r {
   left: 13rem;
   top: 10rem;
-  background-color: yellow;
+  /*background-color: yellow;*/
   opacity: 0.2;
 }
 
 #one-2-l {
   left: 4.5rem;
   top: 10rem;
-  background-color: yellow;
+  /*background-color: yellow;*/
   opacity: 0.2;
 }
 
@@ -85,7 +83,7 @@ img {
   top: 7rem;
   height: 20rem;
   z-index: 4;
-  background-color: red;
+  /*background-color: red;*/
   opacity: 0.2;
 }
 
@@ -94,7 +92,7 @@ img {
   top: 7rem;
   height: 20rem;
   z-index: 4;
-  background-color: red;
+  /*background-color: red;*/
   opacity: 0.2;
 }
 
@@ -102,7 +100,7 @@ img {
   left: 33.5rem;
   top: 0rem;
   height: 34rem;
-  background-color: yellow;
+  /*background-color: yellow;*/
   opacity: 0.2;
 }
 
@@ -110,6 +108,6 @@ img {
   left: 25rem;
   top: 0rem;
   height: 34rem;
-  background-color: yellow;
+  /*background-color: yellow;*/
   opacity: 0.2;
 }
