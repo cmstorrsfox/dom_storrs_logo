@@ -24,7 +24,7 @@ body {
 
 .logo-letter {
   width: calc(9.5rem);
-  height: auto;
+  height: calc(9.5rem);
   position: absolute;
   transform: rotate(-120deg)
 }
