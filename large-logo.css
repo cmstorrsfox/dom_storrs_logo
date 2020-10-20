@@ -9,23 +9,24 @@ body {
 }
 
 .container {
-  display: inline-block;
+  display: block;
   position: relative;
   padding: 0;
-  margin: 20px 0 20px 10px;
+  margin: 20px auto;
 }
 
 .logo-body {
   width: calc(62.5rem);
   position: relative;
   height: auto;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .logo-letter {
   width: calc(9.5rem);
   height: auto;
   position: absolute;
+  transform: rotate(-120deg)
 }
 
 img {
@@ -41,74 +42,4 @@ img {
 #dial-2 {
   top: calc(9.875rem);
   left: calc(28.625rem);
-}
-
-.turn-zone {
-  width: calc(8rem);
-  height: calc(10rem);
-  position: absolute;
-  z-index: 2;
-}
-
-#one-4-r {
-  left: calc(13rem);
-  top: 0;
-  /*background-color: red;
-  opacity: 0.2;*/
-
-}
-
-#one-4-l {
-  left: calc(4.5rem);
-  top: 0;
-  /*background-color: red;
-  opacity: 0.2;*/
-}
-
-#one-2-r {
-  left: calc(13rem );
-  top: calc(10rem);
-  /*background-color: yellow;
-  opacity: 0.2;*/
-}
-
-#one-2-l {
-  left: calc(4.5rem);
-  top: calc(10rem);
-  /*background-color: yellow;
-  opacity: 0.2;*/
-}
-
-#two-4-l {
-  left: calc(25rem);
-  top: calc(7rem);
-  height: calc(20rem);
-  z-index: 4;
-  /*background-color: red;
-  opacity: 0.2;*/
-}
-
-#two-4-r {
-  left: calc(33.5rem);
-  top: calc(7rem);
-  height: calc(20rem);
-  z-index: 4;
-  /*background-color: red;
-  opacity: 0.2;*/
-}
-
-#two-2-r {
-  left: calc(33.5rem);
-  top: 0rem;
-  height: calc(34rem);
-  /*background-color: yellow;
-  opacity: 0.2;*/
-}
-
-#two-2-l {
-  left: calc(25rem);
-  top: 0rem;
-  height: calc(34rem);
-  /*background-color: yellow;
-  opacity: 0.2;*/
 }

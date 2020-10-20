@@ -9,17 +9,17 @@ body {
 }
 
 .container {
-  display: inline-block;
+  display: block;
   position: relative;
   padding: 0;
-  margin: 20px 0 20px 10px;
+  margin: 20px auto;
 }
 
 .logo-body {
   width: calc(62.5rem / 3);
   position: relative;
   height: auto;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .logo-letter {
