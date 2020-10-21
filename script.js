@@ -6,22 +6,29 @@ const coords = document.getElementById('coords');
 
 //page load animations
 function onPageLoad() {
-  dialOne.style.transition = "all 1s ease";
-  dialOne.style.transform = "rotate(0deg)";
+  dialOne.style.transition = "all 1000ms ease";
+  dialOne.style.transform = "rotate(120deg)";
+  dialTwo.style.transition = "all 1500ms ease";
+  dialTwo.style.transform = "rotate(-120deg)";
 
   setTimeout(function() {
-    dialOne.style.transition ="all 1s ease";
+    dialOne.style.transition ="all 3000ms ease";
     dialOne.style.transform = "rotate(-120deg)";
-  }, 1200);
+  }, 1000);
 
-  dialTwo.style.transition = "all 1s ease";
-  dialTwo.style.transform = "rotate(120deg)";
+
 
   setTimeout(function() {
-    dialTwo.style.transition = "all 1s ease";
+    dialTwo.style.transition = "all 1000ms ease";
+    dialTwo.style.transform = "rotate(120deg)";
+  }, 1000);
+
+  
+  setTimeout(function() {
+    dialTwo.style.transition = "all 1000ms ease";
     dialTwo.style.transform = "rotate(0)";
-  }, 1200);
-}
+  }, 2000);
+};
 
 
 
