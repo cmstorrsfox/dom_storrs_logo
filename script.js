@@ -52,4 +52,6 @@ function rotateDials(event) {
   }
 };
 
-document.addEventListener('mousemove', rotateDials);
+setTimeout( function() {
+  document.addEventListener('mousemove', rotateDials);
+  }, 2000);
