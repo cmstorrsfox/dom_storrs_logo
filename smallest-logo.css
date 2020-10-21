@@ -26,7 +26,6 @@ body {
   width: calc(9.5rem / 6);
   height: calc(9.5rem / 6);
   position: absolute;
-  transform: rotate(-120deg)
 }
 
 img {
@@ -37,6 +36,7 @@ img {
 #dial-1 {
   top: 0px;
   left: calc(8rem / 6);
+  transform: rotate(-120deg);
 }
 
 #dial-2 {
