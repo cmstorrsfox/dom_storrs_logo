@@ -7,21 +7,25 @@ const coords = document.getElementById('coords');
 //log coords
 function logCoords(event) {
   const width = window.innerWidth;
-  const x = Math.round((event.clientX / width) * 100);
-  const y = event.clientY;
+  const height = window.innerHeight;
+  const x = Math.round((event.clientX / width) * 120);
+  const y = Math.round((event.clientY / height) * 100);
 
   coords.innerHTML = `x = ${x}, y = ${y}`;
 
+  dialOne.style.transition = "all 0s linear";
+  dialOne.style.transform = `rotate(${-120 + (x*2)}deg)`
+
 } 
 
-document.addEventListener('click', logCoords);
+document.addEventListener('mousemove', logCoords);
 
-/*
 //dial functions and event listeners
 function rotateDials(event) {
   const width = window.innerWidth;
+  const height = window.innerHeight;
   const x = Math.round((event.clientX / width) * 100);
-  const y = event.clientY;
+  const y = Math.round((event.clientY / height) * 100);
 
   console.log(`x = ${x}, width = ${width}`);
 
@@ -81,4 +85,3 @@ function rotateDials(event) {
 }
 
 document.addEventListener('mousemove', rotateDials);
-*/
