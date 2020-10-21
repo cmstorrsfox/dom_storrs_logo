@@ -4,21 +4,29 @@ const logoContainer = document.getElementById('logo-container');
 const trackOne = document.getElementById('track-1');
 const coords = document.getElementById('coords');
 
-//log coords
-function logCoords(event) {
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-  const x = Math.round((event.clientX / width) * 120);
-  const y = Math.round((event.clientY / height) * 100);
+//page load animations
+function onPageLoad() {
+  dialOne.style.transition = "all 1s ease";
+  dialOne.style.transform = "rotate(0deg)";
 
-  coords.innerHTML = `x = ${x}, y = ${y}`;
+  setTimeout(function() {
+    dialOne.style.transition ="all 1s ease";
+    dialOne.style.transform = "rotate(-120deg)";
+  }, 1200);
 
-  dialOne.style.transition = "all 0s linear";
-  dialOne.style.transform = `rotate(${-120 + (x*2)}deg)`
+  dialTwo.style.transition = "all 1s ease";
+  dialTwo.style.transform = "rotate(120deg)";
 
-} 
+  setTimeout(function() {
+    dialTwo.style.transition = "all 1s ease";
+    dialTwo.style.transform = "rotate(0)";
+  }, 1200);
+}
 
-document.addEventListener('mousemove', logCoords);
+
+
+window.addEventListener('load', onPageLoad);
+
 
 //dial functions and event listeners
 function rotateDials(event) {
@@ -42,8 +50,6 @@ function rotateDials(event) {
   } else {
     dialTwo.style.transform = "rotate(0deg)";
   }
-
- 
-}
+};
 
 document.addEventListener('mousemove', rotateDials);
