@@ -2,10 +2,28 @@ const dialOne = document.getElementById('dial-1');
 const dialTwo = document.getElementById('dial-2');
 const logoContainer = document.getElementById('logo-container');
 const trackOne = document.getElementById('track-1');
+const coords = document.getElementById('coords');
 
+//log coords
+function logCoords(event) {
+  const width = window.innerWidth;
+  const x = Math.round((event.clientX / width) * 100);
+  const y = event.clientY;
+
+  coords.innerHTML = `x = ${x}, y = ${y}`;
+
+} 
+
+document.addEventListener('click', logCoords);
+
+/*
 //dial functions and event listeners
 function rotateDials(event) {
+  const width = window.innerWidth;
+  const x = Math.round((event.clientX / width) * 100);
   const y = event.clientY;
+
+  console.log(`x = ${x}, width = ${width}`);
 
   if(y < 750 && y > 650) {
     dialOne.style.transition = "all 0.5s linear";
@@ -63,3 +81,4 @@ function rotateDials(event) {
 }
 
 document.addEventListener('mousemove', rotateDials);
+*/
