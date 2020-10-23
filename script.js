@@ -62,3 +62,30 @@ function rotateDials(event) {
 setTimeout( function() {
   document.addEventListener('mousemove', rotateDials);
   }, 2000);
+
+//play music
+function playMusic(event) {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  const x = Math.round((event.clientX / width) * 120);
+  const y = Math.round((event.clientY / height) * 100);
+
+  if(y < 21 && x <= 60) {
+    trackOne.muted = false; 
+    trackOne.play();
+    trackOne.volume = (x * (0.1/6));
+    console.log(trackOne.volume);
+  } else if( y < 21 && x >= 60 && x < 120) {
+    trackOne.muted = false; 
+    trackOne.play();
+    trackOne.volume = 1 - ((x - 60) * 0.1/6);
+    console.log(trackOne.volume);
+  } else {
+    trackOne.muted = true;
+    trackOne.pause();
+  }
+
+
+}
+
+document.addEventListener('mousemove', playMusic);
