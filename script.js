@@ -2,7 +2,6 @@ const dialOne = document.getElementById('dial-1');
 const dialTwo = document.getElementById('dial-2');
 const logoContainer = document.getElementById('logo-container');
 const trackOne = document.getElementById('track-1');
-const coords = document.getElementById('coords');
 
 //page load animations
 function onPageLoad() {
@@ -42,7 +41,6 @@ function rotateDials(event) {
   const x = Math.round((event.clientX / width) * 120);
   const y = Math.round((event.clientY / height) * 100);
 
-  coords.innerHTML = `x = ${x}, y = ${y}`;
 
   if(x < 60) {
     dialOne.style.transition = "all 0s linear";
@@ -74,12 +72,10 @@ function playMusic(event) {
     trackOne.muted = false; 
     trackOne.play();
     trackOne.volume = ((x - 30) * (0.1/3));
-    console.log(trackOne.volume);
   } else if(y >=2 && y <= 20 && x >= 60 && x < 90) {
     trackOne.muted = false; 
     trackOne.play();
     trackOne.volume = 1 - ((x - 60) * 0.1/3);
-    console.log(trackOne.volume);
   } else {
     trackOne.muted = true;
     trackOne.pause();
