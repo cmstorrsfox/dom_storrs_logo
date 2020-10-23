@@ -70,21 +70,20 @@ function playMusic(event) {
   const x = Math.round((event.clientX / width) * 120);
   const y = Math.round((event.clientY / height) * 100);
 
-  if(y >=2 && y < 21 && x <= 60) {
+  if(y >=2 && y <= 20 && x > 30 && x <= 60) {
     trackOne.muted = false; 
     trackOne.play();
-    trackOne.volume = (x * (0.1/6));
+    trackOne.volume = ((x - 30) * (0.1/3));
     console.log(trackOne.volume);
-  } else if(y >=2 && y < 21 && x >= 60 && x < 120) {
+  } else if(y >=2 && y <= 20 && x >= 60 && x < 90) {
     trackOne.muted = false; 
     trackOne.play();
-    trackOne.volume = 1 - ((x - 60) * 0.1/6);
+    trackOne.volume = 1 - ((x - 60) * 0.1/3);
     console.log(trackOne.volume);
   } else {
     trackOne.muted = true;
     trackOne.pause();
   }
-
 
 }
 
