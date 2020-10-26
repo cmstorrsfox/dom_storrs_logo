@@ -61,6 +61,7 @@ setTimeout( function() {
   document.addEventListener('mousemove', rotateDials);
   }, 2000);
 
+/*  
 //play music
 function playMusic(event) {
   const width = window.innerWidth;
@@ -84,3 +85,5 @@ function playMusic(event) {
 }
 
 document.addEventListener('mousemove', playMusic);
+
+*/
